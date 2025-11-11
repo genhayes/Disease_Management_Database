@@ -1,8 +1,11 @@
 // src/ingest/to_warehouse.ts
 // Functions to upsert normalized disease data into the warehouse database
 
-import { db } from "../lib/sql.js";
+import { db, init } from "../lib/sql";
 import { Disease, Alias, WikiLink } from "../domain/types.js";
+
+// This init ensures tables exist before preparing statements
+init();
 
 // Prepared statements for inserting data into the warehouse database
 const insDisease = db.prepare(`
