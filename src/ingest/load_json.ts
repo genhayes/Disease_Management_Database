@@ -1,4 +1,5 @@
-
+// src/ingest/load_json.ts
+// Function to load and process disease data from JSON file into the warehouse database
 
 import fs from "node:fs";
 import path from "node:path";
