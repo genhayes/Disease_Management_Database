@@ -21,6 +21,11 @@
   },
   "type": "commonjs",
   "scripts": {
+    "dev": "ts-node src/orchestration/run_all.ts",
+    "ingest": "ts-node src/ingest/load_json.ts",
+    "gold": "ts-node src/transform/gold.ts",
+    "quality": "ts-node src/quality/checks.ts",
+    "serve": "ts-node src/serve/api.ts",
     "test": "vitest run"
   }
 }
