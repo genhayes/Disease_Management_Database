@@ -1,4 +1,5 @@
-
+// src/serve/api.ts
+// Express API server for disease management database
 
 import express from "express";
 import { db } from "../lib/sql";
